@@ -3,49 +3,49 @@
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" type = "image/png" href ="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="styles/buildMenu.css">
+        <link rel="stylesheet" type="text/css" href="styles/iniciativa.css">
         <title>Iniciativa IPS</title>
     </head>
     <body>
-        <header>    
-            <img src = "images/logo.png" alt = "Reciclagem"/>   
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href = "Introduction.html">Inicial</a></li>
-                <li><a href = "About.html" >Sobre nós</a></li>
-                <li><a href = "Events.html" >Eventos</a></li>
-            </ul>
-        </nav>
+        <div id = "navbar">
+            <input type = "checkbox" id = "menu_btn"/>
+            <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
+          <ul id = "menu">
+            <li><a href = "Introduction.html">Inicial</a></li>
+            <li><a href = "About.html" id = "about" >Sobre nós</a></li>
+            <li><a href = "Events.html" id = "eventos" >Eventos</a></li>
+          </ul>
+        </div>
         
-        <div>
+        <div id = "littlemenu"></div>
+
+    <div class = "mainmenu">
+        <a id = "title">Iniciativa I.P.S.</a>
+        <div id = "start">
             O Instituto Politécnico de Setúbal, promove muitas vezes seminários e workshops tanto na dentro da instituição como fora sobre a sustentabilidade.
             
             Numa perspetiva de reflexão com vista à ação, são contemplados vários momentos de debate e de Inovação e Sustentabilidade pelo IPS, tendo
             como matéria-prima as várias atividades de investigação que o IPS vem desenvolvendo como contributo para cidades mais inteligentes e amigas do ambiente.
         </div>
-        <img src = "images/ipsTecnolgia.jpg">
-        <div>
+        <div id = "exemplos">
+            <img src = "images/ipsTecnolgia.jpg">
+            <div> 
             <h1>Seminário Alteracões Climáticas</h1>
-            <a>Comemoração do 40º Aniversário do IPS.&nbsp;<a href = "http://ecoescolas.ips.pt/atividades/seminario-alteracoes-climaticas">Clique para mais informações.</a></a>
-            <br>
+            <a>Comemoração do 40º Aniversário do IPS.&nbsp;<a class = "info" href = "http://ecoescolas.ips.pt/atividades/seminario-alteracoes-climaticas">Clique para mais informações.</a></a>
             <h1>Conferência Sobre Energia e Sustentabilidade</h1>
-            <a>Primeira edição da Conferência Internacional de Setúbal sobre Energia e Sustentabilidade.&nbsp;<a href = "https://edificioseenergia.pt/noticias/setubal-62politecnico3/">Clique para mais informações.</a></a>
-            <br>
+            <a>Primeira edição da Conferência Internacional de Setúbal sobre Energia e Sustentabilidade.&nbsp;<a class = "info" href = "https://edificioseenergia.pt/noticias/setubal-62politecnico3/">Clique para mais informações.</a></a>
             <h1>Seminário Tecnologia Sustentável da Economia do Mar</h1>
-            <a>Tema sobre a evolução tecnológica e desenvolvimento sustentável da economia do mar que vai ser apresentado na Escola Superior de Ciências Empresariais.&nbsp;<a href = "http://ecoescolas.ips.pt/atividades/seminario-evolucao-tecnologica-e-desenvolvimento-sustentavel">Clique para mais informações.</a></a>
-            <br>
+            <a>Tema sobre a evolução tecnológica e desenvolvimento sustentável da economia do mar que vai ser apresentado na Escola Superior de Ciências Empresariais.&nbsp;<a class = "info" href = "http://ecoescolas.ips.pt/atividades/seminario-evolucao-tecnologica-e-desenvolvimento-sustentavel">Clique para mais informações.</a></a>
             <h1>Seminário Mobilidade Sustentável</h1>
-            <a>Debate de soluções para romper a atual economia linear da indústria automóvel.&nbsp;<a href = "http://ecoescolas.ips.pt/atividades/intro">Clique para mais informações.</a></a>
-            <br>
-            
+            <a>Debate de soluções para romper a atual economia linear da indústria automóvel.&nbsp;<a class = "info" href = "http://ecoescolas.ips.pt/atividades/intro">Clique para mais informações.</a></a>
+            </div>
         </div>
+    </div>
 
-        <footer>
-            <b>&copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href = "About.html">Sobre nós</a></b>
-        </footer>
+    <div id = "footer">
+        &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+    </div>
+
     </body>
 </html>

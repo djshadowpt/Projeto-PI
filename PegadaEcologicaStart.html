@@ -3,40 +3,54 @@
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" type = "image/png" href ="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="styles/buildMenu.css">
+        <link rel="stylesheet" type="text/css" href="styles/pegstart.css">
+        <link rel="stylesheet" type="text/css" href="styles/progressbar.css">
         <title>Sustentabilidade</title>
     </head>
     <body><!---Meter imagem background--->
-
-        <header>    
-            <img src = "images/logo.png" alt = "Reciclagem"/>   
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href = "Introduction.html">Inicial</a></li>
-                <li><a href = "About.html" >Sobre nós</a></li>
-                <li><a href = "Events.html" >Eventos</a></li>
-            </ul>
-        </nav>
-        
-        <div>
-            <h1>Qual é a tua pegada ecólogica?</h1>
-            </p> 
-            <img src = "images/pegada.png" alt = "Pegada Sustentabilidade">
-            </p>
-            <a>Introduz o teu email</a>
-            </p>
-            <a>Digita o teu nome</a>
-            </p>
-            <a>Avançar</a><!--vai ficar com o hover com os >>--->
+        <div id = "navbar">
+            <input type = "checkbox" id = "menu_btn"/>
+            <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
+          <ul id = "menu">
+            <li><a href = "Introduction.html">Inicial</a></li>
+            <li><a href = "About.html" id = "about" >Sobre nós</a></li>
+            <li><a href = "Events.html" id = "eventos" >Eventos</a></li>
+          </ul>
         </div>
+
+        <div id = "littlemenu"></div>
+    <div class = "mainmenu">
+        <div id = "title">
+            Qual é a tua pegada ecólogica?
+        </div>     
         
-        <footer>
-            <b>&copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href = "About.html">Sobre nós</a></b>
-        </footer>
+        <div id = "form">
+                <div class = "info">
+                Nome:
+                <input type="text" name="username">
+                </div>
+                </br>
+                <div class = "info">
+                Email:
+                <input type="text" name="email">
+                </div>
+            <div id = "input-btn">
+                <input type = "submit" onclick="window.location.href = 'PegadaPrimeiraPergunta.html';">
+            </div>
+
+        </div>
+
+		<div class="progress-bar">
+			<span class="progress-bar-fill" style="width: 0%;"></span>
+		</div>
+		
+    
+        
+    </div>
+        <div id = "footer">
+            &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+        </div>
 
     </body>
 

@@ -1,0 +1,87 @@
+ html,body{
+     background-image: url("../images/pegada.png");
+ }
+
+h1,h2{
+    color:black;
+}
+
+h2{
+    margin-top:-1vw;
+}
+
+ .mainmenu div{
+     color:white;
+ }
+
+ .text{
+     margin-top:8px;
+ }
+
+ #opt-menu{
+    width:40%;
+    margin-top:4vw;
+    display:grid;
+    grid-template-columns:0.2fr 1fr;
+    grid-template-rows:repeat(4,1ft);
+    row-gap:20px;  
+    background-color:rgb(0, 0, 0,0.7);
+    height:30%;
+}
+
+#btn2{
+    grid-row:2/3;
+}
+    
+#btn3{
+    grid-row:3/4;
+}
+  
+#btn4{
+    grid-row:4/5;
+}
+    
+.round {
+    position: relative;
+}
+  
+.round label {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    height: 28px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 28px;
+}
+  
+.round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 6px;
+    left: 7px;
+    opacity: 0;
+    position: absolute;
+    top: 8px;
+    transform: rotate(-45deg);
+    width: 12px;
+}
+  
+.round input[type="checkbox"] {
+    visibility: hidden;
+}
+  
+.round input[type="checkbox"]:checked + label {
+    background-color: #66bb6a;
+    border-color: #66bb6a;
+}
+  
+.round input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+  

@@ -3,40 +3,60 @@
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" type = "image/png" href ="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="styles/buildMenu.css">
+        <link rel="stylesheet" type="text/css" href="styles/progressbar.css">
+        <link rel="stylesheet" type="text/css" href="styles/arrow.css">
+        <link rel="stylesheet" type="text/css" href="styles/pegprimeira.css">
         <title>Sustentabilidade</title>
     </head>
     <body><!---Meter imagem background--->
 
-        <header>    
-            <img src = "images/logo.png" alt = "Reciclagem"/>   
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href = "Introduction.html">Inicial</a></li>
-                <li><a href = "About.html" >Sobre nós</a></li>
-                <li><a href = "Events.html" >Eventos</a></li>
-            </ul>
-        </nav>
-        
-        <div>
-            <a>Transportes</a>
-            </p>
-            <h1>Qual é o meio de transporte que utilizas habitualmente?</h1>
-            </p> 
-            <ul>
-                <li>Transportes públicos</li>
-                <li>Transporte pessoal</li>
-                <li>Bicicleta ou a pé</li>
-            </ul>
+        <div id = "navbar">
+            <input type = "checkbox" id = "menu_btn"/>
+            <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
+          <ul id = "menu">
+            <li><a href = "Introduction.html">Inicial</a></li>
+            <li><a href = "About.html" id = "about" >Sobre nós</a></li>
+            <li><a href = "Events.html" id = "eventos" >Eventos</a></li>
+          </ul>
         </div>
-        
-        <footer>
-            <b>&copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href = "About.html">Sobre nós</a></b>
-        </footer>
+        <div id = "littlemenu"></div>
+    <div class = "mainmenu">
+        <h1>Transportes</h1>
+        <h2>Qual é o meio de transporte que utilizas habitualmente?</h2>
+        <div id = "opt-menu">
+            <div class="round" id = "btn1">
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1" ></label>
+            </div>
+              <div class = "text">Transportes públicos</div>
+              
+            <div class="round" id = "btn2">
+                <input type="checkbox" id="checkbox2" />
+                <label for="checkbox2" ></label>
+            </div>
+            <div class = "text">Transporte pessoal</div>
+              
+            <div class="round" id = "btn3">
+                <input type="checkbox" id="checkbox3" />
+                <label for="checkbox3" ></label>
+            </div>
+            <div class = "text">Bicicleta ou a pé</div>
+              
+        </div>
+    
+        <div id = "arrow" onclick="window.location.href = 'PegadaTeceiraPergunta.html';"></div>
+
+        <div class="progress-bar">
+			<span class="progress-bar-fill" style="width: 25%;"></span>
+		</div>
+
+    
+
+    </div>    
+        <div id = "footer">
+            &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+        </div>
 
     </body>
 

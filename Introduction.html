@@ -4,46 +4,53 @@
         <meta charset="utf-8">
         <link rel="shortcut icon" type = "image/png" href ="images/logo.png">
         <link rel="stylesheet" type="text/css" href="styles/Main.css">
+        <link rel="stylesheet" type="text/css" href="styles/buildMenu.css">
         <title>Sustentabilidade</title>
     </head>
-
     <body>
-        <ul id = "menu">
+        <div id = "navbar">
+            <input type = "checkbox" id = "menu_btn"/>
+            <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
+          <ul id = "menu">
             <li><a href = "Introduction.html">Inicial</a></li>
             <li><a href = "About.html" id = "about" >Sobre nós</a></li>
             <li><a href = "Events.html" id = "eventos" >Eventos</a></li>
-         </ul>
+          </ul>
+        </div>
+
+        <div id = "littlemenu"></div>
 
     <div class = "mainmenu">
-
         <!--Conteúdo fica aqui-->
-        
-        <div class = "dir">
-
             <div id = "title">
                 Sustentabilidade
             </div>
 
             <div id = "second_title">
                 <a href = "PegadaEcologicaStart.html">Qual é a tua pégada ecológica?</a>
-                
-                
             </div>
              
             <div id = "third_title">
-                <a>Sê diferente, contribuí!</a>    
+                <a>Sê diferente, <a href = "https://teamtrees.org/" id = "contribution">contribuí!</a></a>    
             </div>
+            
+        <div id = "lampada">
+            <div id = "imagelampada">
+                <img src = "images/lampada.png" alt = "Lâmpada Sustentabilidade">
+            </div>
+            <div id = "transforma"><a href = "TransformaEmpresa.html">Transforma a tua empresa</a></div>
+            <div id = "iniciativa"><a href = "Iniciativa_IPS.html">Iniciativa IPS</a></div>
+            <div id = "pilares"><a href = "Pilares.html">Os Pilares</a></div>
+            <div id = "covid"><a href = "Covid-19.html">COVID - 19</a></div>
         </div>
-
+        
+        
         <!--Conteúdo fica aqui-->
     </div>
-            
     
-    
-        <footer>
-        <a>&copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento</a>
-        </footer>
-    
-    </body>
+    <div id = "footer">
+        &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+    </div>
 
+    </body>
 </html>

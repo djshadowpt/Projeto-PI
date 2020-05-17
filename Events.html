@@ -3,37 +3,52 @@
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" type = "image/png" href ="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="styles/buildMenu.css">
+        <link rel="stylesheet" type="text/css" href="styles/events.css">
         <title>Eventos</title>
     </head>
     <body>
-        <header>    
-            <img src = "images/logo.png" alt = "Reciclagem"/>   
-        </header>
+        <div id = "navbar">
+            <input type = "checkbox" id = "menu_btn"/>
+            <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
+          <ul id = "menu">
+            <li><a href = "Introduction.html">Inicial</a></li>
+            <li><a href = "About.html" id = "about" >Sobre nós</a></li>
+            <li><a href = "Events.html" id = "eventos" >Eventos</a></li>
+          </ul>
+        </div>
 
-        <nav>
-            <ul>
-                <li><a href = "Introduction.html">Inicial</a></li>
-                <li><a href = "About.html" >Sobre nós</a></li>
-                <li><a href = "Events.html" >Eventos</a></li>
-            </ul>
-        </nav>
+        <div id = "littlemenu"></div>
 
-        <img src = images/greenfest.png>
-        <h1><a href = "https://www.greenfest.pt/">Green Fest</a></h1>
+    <div id = "mainmenu">
+
+        <div id = "planetiers">
         <img src = images/planetiers.jpg>
-        <h1><a href = "https://www.planetiers.com/worldgathering/">Inovação Sustentável</a></h1>
-        <img src = images/additiveExpo.jpg>
-        <h1><a href = "http://exposalao.pt/displayFair/3d-additive-expo/presentation">Additive Expo</a></h1>
-        <img src = images/CongressoDaAgua.png>
-        <h1><a href = "https://www.aprh.pt/congressoagua2020/index.html">15º Congresso Da Água</a></h1>
-        
+            <div class = "text">
+            <a href = "https://www.planetiers.com/worldgathering/">Planetiers - Inovação Sustentável</a>
+            </div>
+            
+        </div>
 
-        <footer>
-            <b>&copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href = "About.html">Sobre nós</a></b>
-        </footer>
+        <div id = "additiveExpo">
+        <img src = images/additiveExpo.jpg>
+            <div class = "text">
+            <a href = "http://exposalao.pt/displayFair/3d-additive-expo/presentation">Additive Expo - Impressão 3D</a>
+            </div>
+        </div>
+
+        <div id = "congresso">
+        <img src = images/CongressoDaAgua.png>
+            <div class = "text">
+            <a href = "https://www.aprh.pt/congressoagua2020/index.html" id = "negro">15º Congresso Da Água - Política da água</a>
+            </div>
+        </div>
+
+    </div>
+
+        <div id = "footer">
+            &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+        </div>
 
 
     </body>

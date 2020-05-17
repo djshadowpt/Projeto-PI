@@ -1,0 +1,51 @@
+#objetivo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color:rgb(208, 208, 225,0.7);
+    width:100%;
+    color:black;
+}
+
+#team{
+    display:grid;
+    margin-top:2vw;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    background-color:rgb(208, 208, 225,0.7);
+    color:black;
+}
+
+#team div{
+    display:flex;
+    justify-content: center;
+    flex-direction:column;
+    align-content:center;
+    align-items: center;
+}
+
+#equipa-title{
+    grid-column:2/3;
+}
+
+#pedro{
+    grid-column:3/4;
+    grid-row:2/3;
+}
+
+#ricardo{
+    grid-column: 1/2;
+    grid-row:2/3;    
+}
+
+#area{
+    width:99.2%;
+    height:40%;
+}
+
+#comments{
+    color:black;
+    margin-top:3vw;
+    background-color:rgb(208, 208, 225,0.7);
+}

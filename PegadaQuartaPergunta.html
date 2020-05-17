@@ -3,41 +3,62 @@
     <head>
         <meta charset="utf-8">
         <link rel="shortcut icon" type = "image/png" href ="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="styles/buildMenu.css">
+        <link rel="stylesheet" type="text/css" href="styles/progressbar.css">
+        <link rel="stylesheet" type="text/css" href="styles/arrow.css">
+        <link rel="stylesheet" type="text/css" href="styles/pegprimeira.css">
         <title>Sustentabilidade</title>
     </head>
     <body><!---Meter imagem background--->
 
-        <header>    
-            <img src = "images/logo.png" alt = "Reciclagem"/>   
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href = "Introduction.html">Inicial</a></li>
-                <li><a href = "About.html" >Sobre nós</a></li>
-                <li><a href = "Events.html" >Eventos</a></li>
-            </ul>
-        </nav>
-        
-        <div>
-            <a>Consumo</a>
-            </p>
-            <h1>Procuras reduzir a produção de resíduos?(reutilizas papel,evitas sacos de plástico,etc.)</h1>
-            </p> 
-            <ul>
-                <li>Sempre</li>
-                <li>Ás vezes</li>
-                <li>Raramente</li>
-                <li>Nunca</li>
-            </ul>
+        <div id = "navbar">
+            <input type = "checkbox" id = "menu_btn"/>
+            <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
+          <ul id = "menu">
+            <li><a href = "Introduction.html">Inicial</a></li>
+            <li><a href = "About.html" id = "about" >Sobre nós</a></li>
+            <li><a href = "Events.html" id = "eventos" >Eventos</a></li>
+          </ul>
         </div>
-        
-        <footer>
-            <b>&copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href = "About.html">Sobre nós</a></b>
-        </footer>
+        <div id = "littlemenu"></div>
+    <div class = "mainmenu">
+        <h1>Consumo</h1>
+        <h2>Procuras reduzir a produção de resíduos?(reutilizas papel,evitas sacos de plástico,etc.)</h2>
+        <div id = "opt-menu">    
+            <div class="round" id = "btn1">
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1" ></label>
+            </div>
+              <div class = "text">Sempre</div>
+              
+            <div class="round" id = "btn2">
+                <input type="checkbox" id="checkbox2" />
+                <label for="checkbox2" ></label>
+            </div>
+            <div class = "text">Ás vezes</div>
+              
+            <div class="round" id = "btn3">
+                <input type="checkbox" id="checkbox3" />
+                <label for="checkbox3" ></label>
+            </div>
+            <div class = "text">Raramente</div>
+              
+            <div class="round" id = "btn4">
+                <input type="checkbox" id="checkbox4" />
+                <label for="checkbox4" ></label>
+            </div>
+              <div class = "text">Nunca</div>
+
+        </div>
+        <div id = "arrow" onclick="window.location.href = 'PegadaEnd.html';"></div>
+
+        <div class="progress-bar">
+			<span class="progress-bar-fill" style="width: 75%;"></span>
+		</div>
+    </div>
+        <div id = "footer">
+            &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+        </div>
 
     </body>
 

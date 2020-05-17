@@ -1,0 +1,34 @@
+h1{
+    font-size:4vw;
+    color:black;
+}
+
+article{
+    background-color:rgb(0, 0, 0,0.9);
+    display:flex;
+    padding:5px;
+    margin-top:6vw;
+}
+
+section{
+    background-color:rgb(208, 208, 225,0.5);
+    margin:5px;
+    text-align:center;
+}
+
+quote{
+    background-color:rgb(0, 0, 0,0.7);
+    margin-top:8vw;
+    display:flex;
+    width:100%;
+    height:100%;
+    justify-content: center;
+    align-items: center;
+    font-style:italic;
+}
+
+@media screen and (max-width: 500px) {
+    article{
+        flex-direction:column;
+    }
+} 

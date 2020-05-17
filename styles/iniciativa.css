@@ -1,0 +1,32 @@
+#start{
+    background-color:rgb(208, 208, 225,0.7);
+    color:black;
+}
+
+#exemplos{
+    display:flex;
+    flex-direction:row;
+    margin-top:6vw; 
+}
+
+#exemplos div{
+    background-color:rgb(208, 208, 225,0.8);
+    color:black;
+}
+
+#exemplos div a{
+    color:black;
+}
+
+#title{
+    font-size:x-large;
+    color:black;
+}
+
+.info:hover{
+    font-weight:bold;
+}
+
+#title{
+    font-size:60px;
+}

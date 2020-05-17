@@ -1,0 +1,172 @@
+html, body{
+    margin:0;
+    padding:0;
+    font-family: "Times New Roman", Times, serif;
+    height:100%;
+    width:100%;
+    border:0 none;
+    background-image:url("../images/principal.jpg");
+    background-image:center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    background-position: center center;
+}
+
+/*Secção do menu da esquerda*/
+ul#menu{
+    width:15%;
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    height:100%;
+    position:fixed;
+    background-image:linear-gradient(to left top, #331a00, green);
+    z-index:3;
+}
+
+#menu li{
+    text-align:center;
+    height:34%;
+    box-sizing: border-box;
+    border-bottom: 0px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#menu li a{
+    background-image:linear-gradient(to left top,#003cb3, #6699ff, limegreen);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width:80%;
+    height:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-decoration:none;
+    font-size:2vw;
+}
+
+#menu li a:hover{
+    font-weight:bold;
+    opacity:0.8;
+    box-shadow: 0px 0px 0px 0px;
+}
+/*Secção do menu da esquerda*/
+
+/*Secção do footer*/
+div#footer{
+    position:fixed;
+    font-size:1vw;
+    right:0;
+    bottom:0;
+    color:white;
+}
+
+/*Secção do footer*/
+
+div.mainmenu{
+    margin:0;
+    padding:0;
+    height:100%;
+    margin-left:15%;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+/*header para o tele*/
+#littlemenu, #menu_btn, #hamburger{
+    display:none;
+}
+
+
+
+@media screen and (max-device-width: 647px) { 
+    ul#menu{
+        margin-top:40px;
+        height:15%;
+        width:15%; 
+        display:none;
+    }
+
+    #littlemenu{
+        display:flex;
+        justify-content:center;
+        left:0;
+        top:0;
+        width:5%;
+        height:4.5%;
+        position:fixed;
+        background-image:linear-gradient(to bottom, #331a00, green);
+    }
+
+    #menu_btn{
+        display:block;
+        position:fixed;
+    }
+
+   #hamburger{
+       display:block;
+       z-index:3;
+       color:white;
+       position:fixed;
+       margin-top:19px;
+       margin-left:15px;
+   }
+
+   #menu_btn:checked ~ ul#menu{
+        display:block;
+   }
+
+    #navbar #hamburger #hamburger-icon{
+        background:white;
+        display:block;
+        height:3px;
+        width:18px;
+        position:relative;
+        transition:background .2s ease-out;
+    }
+
+    #navbar #hamburger #hamburger-icon:after{
+        background:white;
+        content:"";
+        display:block;
+        height:100%;
+        width:100%;
+        position:absolute;
+        transition: all .2s ease-out;
+        top:-5.5px;
+
+    }
+
+    #navbar #hamburger #hamburger-icon:before{
+        background:white;
+        content:"";
+        display:block;
+        height:100%;
+        width:100%;
+        position:absolute;
+        transition: all .2s ease-out;
+        top:6px;
+    }
+
+    #menu_btn:checked ~ #hamburger #hamburger-icon{
+        background:transparent;
+    }
+
+    #menu_btn:checked ~ #hamburger #hamburger-icon:before{
+        transform:rotate(-45deg);
+        top:0;
+    }
+
+    #menu_btn:checked ~ #hamburger #hamburger-icon:after{
+        transform:rotate(45deg);
+        top:0;
+    }
+
+}
+/*header para o tele*/

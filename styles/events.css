@@ -1,0 +1,37 @@
+#mainmenu{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+    padding:0;
+    height:100%;
+    margin-left:15%;
+}
+
+#mainmenu div img{
+    width:70%;  
+}
+
+
+#mainmenu div:nth-of-type(even) .text a{
+    color:white;
+}
+
+
+.text{
+    width:100%;
+    margin-top:-3vw;
+}
+
+a{
+    font-size:2vw;
+    display:inline;
+    color:black;  
+}
+
+a:hover{
+    font-weight:bold;
+}
+
+
+
+
