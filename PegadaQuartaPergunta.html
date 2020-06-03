@@ -22,29 +22,31 @@
         </div>
         <div id = "littlemenu"></div>
     <div class = "mainmenu">
+        <div id = "title">
         <h1>Consumo</h1>
         <h2>Procuras reduzir a produção de resíduos?(reutilizas papel,evitas sacos de plástico,etc.)</h2>
+    </div>
         <div id = "opt-menu">    
             <div class="round" id = "btn1">
-                <input type="checkbox" id="checkbox1" />
+                <input type="checkbox" id="checkbox1" onclick="buttonPressed('75%','100%')"/>
                 <label for="checkbox1" ></label>
             </div>
               <div class = "text">Sempre</div>
               
             <div class="round" id = "btn2">
-                <input type="checkbox" id="checkbox2" />
+                <input type="checkbox" id="checkbox2" onclick="buttonPressed('75%','100%')"/>
                 <label for="checkbox2" ></label>
             </div>
             <div class = "text">Ás vezes</div>
               
             <div class="round" id = "btn3">
-                <input type="checkbox" id="checkbox3" />
+                <input type="checkbox" id="checkbox3" onclick="buttonPressed('75%','100%')"/>
                 <label for="checkbox3" ></label>
             </div>
             <div class = "text">Raramente</div>
               
             <div class="round" id = "btn4">
-                <input type="checkbox" id="checkbox4" />
+                <input type="checkbox" id="checkbox4" onclick="buttonPressed('75%','100%')"/>
                 <label for="checkbox4" ></label>
             </div>
               <div class = "text">Nunca</div>
@@ -53,13 +55,14 @@
         <div id = "arrow" onclick="window.location.href = 'PegadaEnd.html';"></div>
 
         <div class="progress-bar">
-			<span class="progress-bar-fill" style="width: 75%;"></span>
+			<span class="progress-bar-fill" style="width: 75%;" id = "fillBar"></span>
 		</div>
     </div>
         <div id = "footer">
             &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
         </div>
 
+        <script src = "scripts/script2.js/pegadabtns.js"></script>
     </body>
 
 </html>

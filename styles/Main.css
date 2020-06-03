@@ -1,4 +1,3 @@
-
 div.mainmenu{
     margin:0;
     padding:0;
@@ -10,115 +9,139 @@ div.mainmenu{
     align-items: center;
 }
 
+#title{
+    text-shadow: 0 0 10px black;
+}
+
+#second_title{
+    height:auto;
+    border-radius:10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6); 
+    padding:1rem;
+    background-color: rgb(224, 224, 224);
+}
+
+#title_sector div a{
+    color:black;
+    font-size:2rem;
+    transition: text-shadow 0.5s ease-out;
+}
+
+#title_sector{
+    box-shadow: 0 0 5px rgba(0,0,0,0.6); 
+    padding:1rem;
+    background-color: rgb(224, 224, 224);
+    border-radius:10px;
+    width:45%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
 .mainmenu div#title{
     font-size:10vw;
     font-weight:bold;
 }
 
-.mainmenu div#second_title{
-    font-size:2vw;
-    color:white;
-}
-
-.mainmenu div#second_title a{
-    text-decoration: none;
-    color:white;
-    display:flex;
-    align-content:center;
-}
-
-
-.mainmenu div#second_title a:hover{
+#second_title a:hover{
     font-weight:bold;
 }
 
-.mainmenu div#third_title{
-    font-size:2vw;
-    height:10%;
-    margin-top:0.5vw;
+#pegada:hover{
+    text-shadow: 0 0 10px lime;
 }
 
-.mainmenu div#third_title a#contribution{
-    text-decoration:none;
-    color:white;
-}
-
-.mainmenu div#third_title a#contribution:hover{
+#title_sector a#contribution:hover{
     font-weight:bold;
+    text-shadow: 0 0 10px lime;
 }
 
+@media screen and (max-width:1100px){
+    #title{
+        margin:0;
+    }
+
+    #second_title{
+        margin:0;
+    }
+}
+
+/*------------------------------------------------------------*/
 #lampada{
-    height:25vw;
-    width:50vw;
-    margin-top:3vw;
-    display:grid;
-    grid-template-rows:repeat(2,1fr);
-    grid-template-columns:repeat(3,1fr);
-
-}
-
-#lampada div{
+    margin-top:30px;
     display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
+    justify-content:center;
+    flex-direction:column;
 }
 
-#lampada #imagelampada{
-    margin-left:1vw;
-    margin-top:4vw;
+#imagelampada{
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
 }
 
-#lampada #imagelampada:hover + #transforma + #iniciativa + #pilares + #covid {
-    visibility: visible;
-    opacity: 1;
+#imagelampada img{
+    height:400px;
+    width:400px;
+    border-radius:50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6); 
+    background-color: rgb(224, 224, 224);
+    animation: spin 30s linear infinite;
+    cursor:pointer;
+    transition: 0.5s ease;
 }
 
-#lampada #imagelampada:hover + #transforma + #iniciativa +#pilares {
-    visibility: visible;
-    opacity: 1;
-}
-
-#lampada #imagelampada:hover + #transforma + #iniciativa {
-    visibility: visible;
-    opacity: 1;
-}
-
-#lampada #imagelampada:hover + #transforma {
-    visibility: visible;
-    opacity: 1;
-}
-
-#lampada #transforma{
-    grid-column:1/2;
-    grid-row:1/2;
-    margin-bottom:12vw;
+#imagelampada img:hover{
+    height:500px;
+    width:500px;
 }
 
 #lampada div:not(#imagelampada){
-    border:2px solid;
-    background-color:green;
-    visibility: hidden;
-    opacity: 0;
-    transition: visibility 0s, opacity 1s linear;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6); 
+    background-color: rgb(224, 224, 224);
+    border-radius:50%; 
+    position:absolute;
+    height:300px;
+    width:300px;  
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    justify-content: center;
+    transition: right 1s ease 0s;
 }
 
-#lampada #iniciativa{
-    margin-bottom:12vw;
+#lampada div a{
+    text-decoration:none;
+    font-size:2rem;
+    color:black;
+    border-radius:10px;
+    transition:text-shadow 0.5s ease;
 }
 
-#lampada #covid{
-    grid-column: 3/4;
+#lampada div a:hover{
+    font-weight:bold;
+    text-shadow: 0 0 20px lime;
 }
 
-
-#lampada a{
-    color:white;
-    text-decoration: none;
-    font-size:2vw;
+#transforma{
+    visibility:hidden;
 }
 
-img{
-    width:10vw;
+#pilares{
+    visibility:hidden;
+}
+
+#iniciativa{
+    visibility:hidden;
+}
+
+#covid{
+    visibility:hidden;
+}
+
+@keyframes spin { 
+    100% {  transform:rotate(360deg); } 
 }
 

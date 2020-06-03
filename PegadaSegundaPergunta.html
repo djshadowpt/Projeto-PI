@@ -22,23 +22,25 @@
         </div>
         <div id = "littlemenu"></div>
     <div class = "mainmenu">
+        <div id = "title">
         <h1>Transportes</h1>
         <h2>Qual é o meio de transporte que utilizas habitualmente?</h2>
+        </div>
         <div id = "opt-menu">
             <div class="round" id = "btn1">
-                <input type="checkbox" id="checkbox1" />
+                <input type="checkbox" id="checkbox1" onclick="buttonPressed('25%','50%')" />
                 <label for="checkbox1" ></label>
             </div>
               <div class = "text">Transportes públicos</div>
               
             <div class="round" id = "btn2">
-                <input type="checkbox" id="checkbox2" />
+                <input type="checkbox" id="checkbox2" onclick="buttonPressed('25%','50%')"/>
                 <label for="checkbox2" ></label>
             </div>
             <div class = "text">Transporte pessoal</div>
               
             <div class="round" id = "btn3">
-                <input type="checkbox" id="checkbox3" />
+                <input type="checkbox" id="checkbox3" onclick="buttonPressed('25%','50%')"/>
                 <label for="checkbox3" ></label>
             </div>
             <div class = "text">Bicicleta ou a pé</div>
@@ -48,16 +50,15 @@
         <div id = "arrow" onclick="window.location.href = 'PegadaTeceiraPergunta.html';"></div>
 
         <div class="progress-bar">
-			<span class="progress-bar-fill" style="width: 25%;"></span>
+			<span class="progress-bar-fill" style="width: 25%;" id = "fillBar"></span>
 		</div>
-
-    
 
     </div>    
         <div id = "footer">
             &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
         </div>
 
+        <script src = "scripts/script2.js/pegadabtns2.js"></script>
     </body>
 
 </html>

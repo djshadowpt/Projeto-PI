@@ -23,28 +23,30 @@
 
         <div id = "littlemenu"></div>
     <div class = "mainmenu">
-        <h1>Alimentação</h1>
-        <h2>Como melhor caracterizas a tua dieta?</h2>
+        <div id = "title">
+            <h1>Alimentação</h1>
+            <h2>Como melhor caracterizas a tua dieta?</h2>
+        </div>
         <div id = "opt-menu">
             <div class="round" id = "btn1">
-                <input type="checkbox" id="checkbox1" />
+                <input type="checkbox" id="checkbox1" onclick="buttonPressed('0%','25%')"/>
                 <label for="checkbox1" ></label>
             </div>
               <div class = "text">Carne mais do que 3 vezes por semana</div>
               
-            <div class="round" id = "btn2">
+            <div class="round" id = "btn2" onclick="buttonPressed('0%','25%')">
                 <input type="checkbox" id="checkbox2" />
                 <label for="checkbox2" ></label>
             </div>
             <div class = "text">Carne menos do que 3 vezes por semana</div>
               
-            <div class="round" id = "btn3">
+            <div class="round" id = "btn3" onclick="buttonPressed('0%','25%')">
                 <input type="checkbox" id="checkbox3" />
                 <label for="checkbox3" ></label>
             </div>
             <div class = "text">Vegetariano</div>
               
-            <div class="round" id = "btn4">
+            <div class="round" id = "btn4" onclick="buttonPressed('0%','25%')">
                 <input type="checkbox" id="checkbox4" />
                 <label for="checkbox4" ></label>
             </div>
@@ -55,15 +57,14 @@
         <div id = "arrow" onclick="window.location.href = 'PegadaSegundaPergunta.html';"></div>
 
         <div class="progress-bar">
-			<span class="progress-bar-fill" style="width: 0%;"></span>
-            
+			<span class="progress-bar-fill" style="width: 0%;" id = "fillBar"></span>
         </div>
 
     </div>    
         <div id = "footer">
             &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
         </div>
-    
+    <script src = "scripts/script2.js/pegadabtns.js" ></script>
     </body>
 
 </html>

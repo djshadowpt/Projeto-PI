@@ -1,22 +1,29 @@
 
-#mainmenu{
-    margin:0;
-    padding:0;
-    height:100%;
-    margin-left:15%;
+
+#video{
+    margin-top:3rem;
+    width:100%;
+    height:75%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #video iframe{
-    margin-left:15%;
-    margin-top:10%;
-    width:70%;
-    height:70%;
+    border:none;
+    border-radius:10px;
+    width:90%;
+    height:100%;
 }
 
 #description{
-    margin-top:3vw;
-    padding:25px;
-    padding-left:50px;
-    font-size:3.5vw;
+    margin-bottom:1rem;
+    margin-top:2rem;
+    border-radius:10px;
+    font-size:3vw;
     background-color:rgb(208, 208, 225,0.9);
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color:black;
+    background-color: rgb(224, 224, 224);
 }

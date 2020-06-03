@@ -5,7 +5,9 @@ a{
 
 #stop{
     position:relative;
-    bottom:1vw;
+    bottom:0;
+    font-size:2rem;
+    padding-right:250px;
 }
 
 #stop:hover{
@@ -31,9 +33,19 @@ img{
     align-items: center;
 }
 
+#apoiar, #incentivar{
+    padding-top:20px;
+}
+
+#top10 div{
+    padding:20px;
+}
+
 #top10 div:nth-of-type(odd){
-    background-color:rgb(208, 208, 225,0.8);
+    box-shadow: 0 0 5px rgba(0,0,0,0.6); 
+    border-radius:10px;
     color:black;
+    background-color: rgb(224, 224, 224);
 }
 
 #top10 div:nth-of-type(odd) a{
@@ -42,24 +54,42 @@ img{
 }
 
 #top10 div:nth-of-type(even){
-    background-color:rgb(61, 61, 61,0.8);
+    box-shadow: 0 0 10px rgba(0,0,0,0.6); 
+    border-radius:10px;
+    color:black;
+    background-color: rgb(97, 97, 97);
+}
+
+#top10 div:nth-of-type(even) h1{
+    color:white;
 }
 
 #china{
-    margin-top:5vw;
-    background-color:rgb(208, 208, 225,0.8);
-    color:black;
+    margin-top:40px;
     font-weight:bold;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6); 
+    color:black;
+    background-color: rgb(224, 224, 224);
+}
+
+#title{
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6); 
+    color:black;
+    background-color: rgb(224, 224, 224);
+    margin-right:10px;
 }
 
 #title h1{
+    margin-bottom:60px;
     text-align:center;
     color:black;
 }
 
 #title-text{
-    background-color:rgb(208, 208, 225,0.8); 
-    font-weight:bold;
     color:black;
 }
 

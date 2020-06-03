@@ -8,4 +8,6 @@
     right:0;
     top:45%;
     cursor:pointer;
+    visibility: hidden;
+    opacity:0;
 }

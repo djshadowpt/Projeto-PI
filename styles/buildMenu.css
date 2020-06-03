@@ -1,7 +1,7 @@
 html, body{
     margin:0;
     padding:0;
-    font-family: "Times New Roman", Times, serif;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
     height:100%;
     width:100%;
     border:0 none;
@@ -22,8 +22,7 @@ ul#menu{
     text-align:center;
     height:100%;
     position:fixed;
-    background-image:linear-gradient(to left top, #331a00, green);
-    z-index:3;
+     z-index:3;
 }
 
 #menu li{
@@ -37,8 +36,9 @@ ul#menu{
 }
 
 #menu li a{
-    background-image:linear-gradient(to left top,#003cb3, #6699ff, limegreen);
-    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    background-image:linear-gradient(to left top,#003cb3, rgb(102, 153, 255,1), rgba(34,139,34,0.2));
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.5);
+    border-radius:50px;
     width:80%;
     height:50%;
     display:flex;
@@ -46,13 +46,14 @@ ul#menu{
     align-items:center;
     color:white;
     text-decoration:none;
-    font-size:2vw;
+    font-size:2.5vw;
+    transition: text-shadow 0.7s;
 }
 
 #menu li a:hover{
-    font-weight:bold;
-    opacity:0.8;
+    text-shadow: 0 0 10px black;
     box-shadow: 0px 0px 0px 0px;
+    cursor:pointer;
 }
 /*Secção do menu da esquerda*/
 
@@ -64,7 +65,6 @@ div#footer{
     bottom:0;
     color:white;
 }
-
 /*Secção do footer*/
 
 div.mainmenu{
@@ -85,14 +85,36 @@ div.mainmenu{
 
 
 
-@media screen and (max-device-width: 647px) { 
+@media screen and (max-device-width: 650px) { 
     ul#menu{
         margin-top:40px;
         height:15%;
         width:15%; 
-        display:none;
+        visibility:hidden;
+        opacity:0;
+        transition: visibility 0.5s, opacity 0.5s linear;
+        background-image:none;
     }
 
+    #menu li{
+        background-color: transparent;
+    }
+
+    #menu li a{
+        border-radius:0;
+        height:100%;
+        margin-top:20px;
+        
+    }
+
+    .mainmenu div:first-child{
+        margin-top:150px;
+    }
+
+    div.mainmenu{
+        margin-left:0%;
+    }
+ 
     #littlemenu{
         display:flex;
         justify-content:center;
@@ -101,29 +123,29 @@ div.mainmenu{
         width:5%;
         height:4.5%;
         position:fixed;
-        background-image:linear-gradient(to bottom, #331a00, green);
     }
 
     #menu_btn{
-        display:block;
+        display:none;
         position:fixed;
     }
 
    #hamburger{
        display:block;
        z-index:3;
-       color:white;
+       color:black;
        position:fixed;
        margin-top:19px;
        margin-left:15px;
    }
 
    #menu_btn:checked ~ ul#menu{
-        display:block;
+        visibility: visible;
+        opacity:1;
    }
 
     #navbar #hamburger #hamburger-icon{
-        background:white;
+        background:black;
         display:block;
         height:3px;
         width:18px;
@@ -132,7 +154,7 @@ div.mainmenu{
     }
 
     #navbar #hamburger #hamburger-icon:after{
-        background:white;
+        background:black;
         content:"";
         display:block;
         height:100%;
@@ -144,7 +166,7 @@ div.mainmenu{
     }
 
     #navbar #hamburger #hamburger-icon:before{
-        background:white;
+        background:black;
         content:"";
         display:block;
         height:100%;

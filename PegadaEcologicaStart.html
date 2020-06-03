@@ -20,25 +20,28 @@
         </div>
 
         <div id = "littlemenu"></div>
+
     <div class = "mainmenu">
         <div id = "title">
             Qual é a tua pegada ecólogica?
         </div>     
         
-        <div id = "form">
-                <div class = "info">
-                Nome:
-                <input type="text" name="username">
-                </div>
-                </br>
-                <div class = "info">
-                Email:
-                <input type="text" name="email">
-                </div>
-            <div id = "input-btn">
-                <input type = "submit" onclick="window.location.href = 'PegadaPrimeiraPergunta.html';">
+        <div id = "input_sector">
+        <fieldset id = "comments">
+            <div id = "input_area">
+            <input id = "name" type="text"/>
+            <label class = "label" for = "name">Name</label>
             </div>
 
+            <div id = "input_area">
+            <input id = "email" type="text"/> 
+            <label class = "label" for = "email">Email</label>    
+            </div>
+
+            <div id = "button" onclick = "botao()">
+            <button>Enviar</button>
+            </div>
+        </fieldset>
         </div>
 
 		<div class="progress-bar">
@@ -51,7 +54,7 @@
         <div id = "footer">
             &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
         </div>
-
+        <script src = "scripts/pegadastart.js"></script>
     </body>
 
 </html>

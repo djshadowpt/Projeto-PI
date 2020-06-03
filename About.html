@@ -23,42 +23,55 @@
     <div class = "mainmenu">
         <div id = "objetivo">
             <h1>O nosso objetivo</h1>
+            <div id = "texto_objetivo">
             É importante ter em conta que sustentabilidade vai muito além das questões ambientais, estendendo-se também a questões sociais e económicas. Começam então
             a surgir iniciativas para concebê-la e materializá-la no contexto das organizações empresariais, implementando-se um modelo de mudança social
             com o propósito de prestar atendimento, de forma equilibrada, ás pessoas, ao planeta e ao lucro, medindo-se o valor que geram ou que destroem
             na sociedade. No geral, o principal objetivo deste website é informar-vos, alertar-vos e amplificar positivamente a diferença que fazem neste planeta! 
+            </div>
         </div>
-        <!----Vai ser uma espécie de quadrado em baixo do texto.--->
+    
         
         <div id = "team">
             <div id = "equipa-title"><h1>A nossa equipa</h1></div>
+         <div id = "names">
             <div id = "ricardo">
                 <h2>Ricardo Lopes</h2>
-                <a>Email:lkraka2000@gmail.com</a>
+                <a>Email: lkraka2000@gmail.com</a>
                 <br>
                 <a>Contacto: 924299687</a>
             </div>
             <div id = "pedro">
                 <h2>Pedro Sacramento</h2>
-                <a>Email:pedro.sacramento2000@gmail.com</a>
+                <a>Email: pedro.sacramento2000@gmail.com</a>
                 <br>
                 <a>Contacto: 939645058</a>
             </div>
+         </div>
         </div>
-        
-        <div id = "comments">
-            <h1>O que poderíamos melhorar/introduzir no nosso website?</h1>
-            <form action="/action_page.php" id="usrform">
-            <b>Nome:</b><input type="text" name="username">
-            <br><br>
-            <b>Email:</b><input type="text" name="email">
-            </form>
-            <br>
-            <textarea name="comment" form="usrform" id = "area">Escreve aqui...</textarea>
-            <input type="submit">
-            <br>
-        </div>
+        <div id = "comments-section">
+            <fieldset id = "comments">
+            <legend>Comentar</legend>
+            <div id = "input_sector">
+                    <div id = "input_area">
+                    <input id = "name" type="text"/>
+                    <label class = "label" for = "name">Name</label>
+                    </div>
 
+                    <div id = "input_area">
+                    <input id = "email" type="text"/> 
+                    <label class = "label" for = "email">Email</label>    
+                    </div>
+
+                    <div id = "button">
+                    <button>Enviar</button>
+                    </div>
+            </div>
+            </fieldset>
+            <div id = "area">
+                <textarea name="comment" form="usrform" id = "caixa_comment">Escreve aqui...</textarea>
+            </div>
+        </div>
     </div>
 
           <div id = "footer">
