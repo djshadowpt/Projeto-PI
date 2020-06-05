@@ -1,18 +1,15 @@
 #title{
-    margin-top:2rem;
+    margin-top:4rem;
     font-size:60px;
     color:black;
 }
 
 /*--------------------------------------------------------------*/
 #input_sector{
-    margin-top:3rem;
-    width:40%;    
-}
-
-#area{
+    margin-top:8rem;
     display:flex;
-    grid-column:2/3;
+    height:40%;
+    width:50%;
 }
 
 #comments{
@@ -24,7 +21,7 @@
     background-color: rgb(224, 224, 224);
     border:none;
     display:flex;
-    height:75%;
+    width:100%;
     flex-direction:column;
 }
 
