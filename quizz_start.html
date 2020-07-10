@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang ="pt">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <link rel="shortcut icon" type = "image/png" href ="images/logo.png">
+        <link rel="stylesheet" type="text/css" href="www/styles/structure.css">
+        <link rel="stylesheet" type="text/css" href="www/styles/old/quizzStart.css">
+        <link rel="stylesheet" type="text/css" href="www/styles/bootstrap/bootstrap.css">
+        <script type="text/javascript" src="www/scripts/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="www/scripts/userInteraction.js"></script> 
+        <title>Sustentabilidade</title>
+    </head>
+    <body><!---Meter imagem background--->
+        <div id = "sidebar_popper">
+            <input type = "checkbox" id = "menu_btn"/>
+            <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
+        </div>    
+        
+        <nav id="sidebar">
+            <ul id = "sidebar_menu">
+                <div id= "sidebar_header"><a>Desenvolvimento<br>Sustentável</a></div>
+                <li><a href = "index.html" id = "home">Inicial</a></li>
+                <li><a href = "About.html" id = "about" >Sobre nós</a></li>
+                <li><a href = "Events.html" id = "events" >Eventos</a></li>
+            </ul>        
+        </nav>
+
+    <div class = "mainmenu" id = "quizzPage">
+        <div id = "title">
+            Qual é a tua pegada ecólogica?
+        </div>     
+        
+        <div id = "input_sector">
+        <fieldset id = "comments">
+            <div id = "input_area">
+            <input id = "name" type="text"/>
+            <label class = "label" for = "name">Name</label>
+            </div>
+
+            <div id = "input_area">
+            <input id = "email" type="text"/> 
+            <label class = "label" for = "email">Email</label>    
+            </div>
+
+            <div id = "button" onclick = "botao()">
+            <button>Enviar</button>
+            </div>
+        </fieldset>
+        </div>
+        
+    </div>
+    <footer id = "footer">
+        &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+    <footer>
+        <script src = "scripts/script2.js/pegadastart.js"></script>
+    </body>
+
+</html>

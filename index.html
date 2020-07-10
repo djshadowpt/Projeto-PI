@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang ="pt">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="www/images/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="www/styles/index.css">
+        <link rel="stylesheet" type="text/css" href="www/styles/structure.css">
+        <link rel="stylesheet" type="text/css" href="www/styles/bootstrap/bootstrap.css">
+        <script type="text/javascript" src="www/scripts/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="www/scripts/jquery_timestamp.js"></script>
+        <script type="text/javascript" src="www/scripts/userInteraction.js"></script>
+        <title>Sustentabilidade</title>
+    </head>
+    <body>
+        <div id = "sidebar_popper">
+            <input type = "checkbox" id = "menu_btn"/>
+            <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
+        </div>    
+        
+        <nav id="sidebar">
+            <ul id = "sidebar_menu">
+                <div id= "sidebar_header"><a>Desenvolvimento<br>Sustentável</a></div>
+                <li><a href = "index.html" id = "home">Inicial</a></li>
+                <li><a id = "about" >Sobre nós</a></li>
+                <li><a href = "events.html" id = "events" >Eventos</a></li>
+            </ul>        
+        </nav>
+       
+
+
+    <div class = "mainmenu" id = "indexPage">
+        <div id = "title">Sustentabilidade</div>
+
+        <a class = "p-3 rounded h3 shadow-lg" href = "quizz_start.html" id = "ftprintQuestion">Descobre a tua pégada ecológica</a>
+        
+
+        <div id = "circularImage" >
+            <img src = "www/images/rotate.png" alt = "Lâmpada Sustentabilidade" id = "main_image" class = "bg-light">
+        </div>    
+        
+        <div id = "circularImage_subMenus">
+            <div id = "transform" class = "rounded">
+                <a href = "transform.html">Transforma a tua empresa</a>
+            </div>
+            
+            <div id = "pillars" class = "rounded">
+                <a href = "pillars.html">Os Pilares</a>
+            </div>
+
+            <div id = "covid" class = "rounded">
+                <a href = "covid19.html">COVID - 19</a>
+            </div>
+
+            <div id = "initiative" class = "rounded">
+                <a href = "IPS.html">Iniciativa IPS</a>
+            </div>
+        </div>
+        
+    </div>
+    
+                                                                    <!--ABOUT PAGE-->
+    <div class = "mainmenu" id = "aboutPage">
+        <div class = "m-5 bg-light text-dark rounded p-5 shadow-lg">
+            <h1>O nosso objetivo</h1>
+            <div>
+            É importante ter em conta que sustentabilidade vai muito além das questões ambientais, estendendo-se também a questões sociais e económicas. Começam então
+            a surgir iniciativas para concebê-la e materializá-la no contexto das organizações empresariais, implementando-se um modelo de mudança social
+            com o propósito de prestar atendimento, de forma equilibrada, ás pessoas, ao planeta e ao lucro, medindo-se o valor que geram ou que destroem
+            na sociedade.<br>Então, o principal objetivo deste website é informar-vos, alertar-vos e amplificar positivamente a diferença que fazem neste planeta! 
+            </div>
+        </div>
+
+        <div>
+            <div class = "d-flex bg-light text-dark rounded position-relative shadow-lg">
+                <div class = "m-5">
+                    <h2>Ricardo Lopes</h2>
+                    <a>Email: lkraka2000@gmail.com</a>
+                    <br>
+                    <a>Contacto: 924299687</a>
+                </div>
+
+                <div class = "m-5">
+                    <h2>Pedro Sacramento</h2>
+                    <a>Email: pedro.sacramento2000@gmail.com</a>
+                    <br>
+                    <a>Contacto: 939645058</a>
+                </div>
+            </div>
+        </div>
+
+        <div style = "width:70%" id = "comments_section" class = "bg-light m-5 p-3 text-dark rounded shadow-lg">
+            <b class = "h2">Comentários</b>
+            <div class = "m-2">
+            <label for="input_name">Nome</label>
+            <input type="input" class="w-50 form-control" id="input_name" placeholder="Introduza o nome">
+            </div>
+
+            <div>
+                <textarea class="form-control m-2 text-muted h5" id="text_area" rows="3">Insira o seu comentário...</textarea>
+            </div>
+
+            <input type = "submit" value = "Comentar" id = "confirm" class = " btn btn-primary ml-2" onclick = "insertComment();"></button>
+            
+            <div class = "m-3">
+            </div>
+        </div>      
+    </div>
+                                                                    <!--ABOUT PAGE-->
+
+
+    <footer id = "footer">
+        &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+    <footer>
+    
+    </body>
+</html>

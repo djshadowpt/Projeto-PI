@@ -2,55 +2,55 @@
 <html lang ="pt">
     <head>
         <meta charset="utf-8">
-        <link rel="shortcut icon" type = "image/png" href ="images/logo.png">
-        <link rel="stylesheet" type="text/css" href="styles/buildMenu.css">
-        <link rel="stylesheet" type="text/css" href="styles/events.css">
-        <script type="text/javascript" src="scripts/jquery-3.5.1.min.js"></script>
-        <script type="text/javascript" src="scripts/overall.js"></script> 
+        <link rel="icon" type="image/png" href="images/favicon.png"/>
+        <link rel="stylesheet" type="text/css" href="www/styles/structure.css">
+        <link rel="stylesheet" type="text/css" href="www/styles/index.css">
+        <link rel="stylesheet" type="text/css" href="www/styles/bootstrap/bootstrap.css">
+        <script type="text/javascript" src="www/scripts/jquery-3.5.1.min.js"></script>
+        <script type="text/javascript" src="www/scripts/userInteraction.js"></script> 
         <title>Eventos</title>
     </head>
     <body>
-        <div id = "navbar">
+        <div id = "sidebar_popper">
             <input type = "checkbox" id = "menu_btn"/>
             <label for = "menu_btn" id = "hamburger"><span id = "hamburger-icon"></span></label>
-          <ul id = "menu">
-            <li><a href = "Introduction.html">Inicial</a></li>
-            <li><a href = "About.html" id = "about" >Sobre nós</a></li>
-            <li><a href = "Events.html" id = "eventos" >Eventos</a></li>
-          </ul>
+        </div>    
+        
+        <nav id="sidebar">
+            <ul id = "sidebar_menu">
+                <div id= "sidebar_header"><a>Desenvolvimento<br>Sustentável</a></div>
+                <li><a href = "index.html" id = "home">Inicial</a></li>
+                <li><a href = "about.html" id = "about" >Sobre nós</a></li>
+                <li><a href = "events.html" id = "events" >Eventos</a></li>
+            </ul>        
+        </nav>
+
+    <div class = "mainmenu" id = "eventsPage">
+        <div class = "container position-relative">
+            <img src = "www/images/planetiers.jpg" alt = "planetiers" class = "img-fluid p-2">
+            <div style = "right:30px;bottom:20px;" class = "position-absolute rounded btn-primary p-4 m-2">
+                <a class = "text-white text-decoration-none h4" href = "https://www.planetiers.com/worldgathering/">Planetiers<a>
+            </div>
         </div>
 
-        <div id = "littlemenu"></div>
-
-    <div class = "mainmenu">
-
-        <div id = "planetiers">
-            <figure>
-                <img src = "images/planetiers.jpg" alt = "planetiers">
-                <caption><a id = "negro" href = "https://www.planetiers.com/worldgathering/">Planetiers</a></caption>
-            </figure>
-        </div>
-            
-
-        <div id = "additiveExpo">
-            <figure>
-                <img src = "images/additiveExpo.jpg" alt = "additiveexpo">
-                    <caption><a href = "http://exposalao.pt/displayFair/3d-additive-expo/presentation">Additive Expo - Impressão 3D</a></caption>
-            </figure>
+        <div class = "container position-relative">
+            <img src = "www/images/additiveExpo.jpg" alt = "additiveexpo" class = "img-fluid p-2">
+            <div style = "right:30px;bottom:20px;" class = "position-absolute rounded btn-primary p-4 m-2">
+                <a class = "text-white text-decoration-none h4" href = "https://www.exposalao.pt/displayFair/3d-additive-expo">Additive Expo</a>
+            </div>
         </div>
 
-        <div id = "congresso">
-            <figure>
-                <img src = "images/CongressoDaAgua.png" alt = "additiveexpo">
-                    <caption><a href = "https://www.aprh.pt/congressoagua2020/index.html">Congresso Da Água</a></caption>
-            </figure>
+        <div class = "container position-relative">
+            <img src = "www/images/CongressoDaAgua.png" alt = "congresso" class = "img-fluid p-2">
+            <div style = "right:30px;bottom:20px;" class = "position-absolute rounded btn-primary p-4 m-2">
+                <a class= "text-white text-decoration-none h4" href = "https://www.aprh.pt/pt/eventos/organizados-pela-aprh/2020/15-congresso-da-agua">Congresso da Água</a>
+            </div>
         </div>
-
     </div>
 
-        <div id = "footer">
-            &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
-        </div>
+    <footer id = "footer">
+        &copy;&nbsp;2020 - Programação para a Internet - publicado por Ricardo Lopes e Pedro Sacramento
+    <footer>
 
 
     </body>
